@@ -1,0 +1,137 @@
+\documentclass[12pt,a4paper]{report}
+\input{./head.tex}
+
+\begin{document}
+\large
+
+\begin{titlepage}
+
+\input{./title.tex}
+
+
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\chapter*{Введение}
+\addcontentsline{toc}{chapter}{Введение}
+	\input{vvedenie.tex}
+
+\chapter{Теория чисел}
+
+\section{Модулярная арифметика}
+	\input{moduloarif.tex}
+
+\section{Учебный алгоритм RSA}
+	\input{rsa.tex}
+
+\section{Функция Эйлера}
+	\input{eulerfunc.tex}
+
+\section{Алгоритм повторного возведения в квадрат}
+	\input{vstepen.tex}
+
+\section{Алгоритм Евклида для вычисления наибольшего общего делителя}
+	\input{euclid.tex}
+
+\section[Расширенный алгоритм Евклида для решения целочисленных линейных уравнений]{Расширенный алгоритм Евклида для решения целочисленных линейных уравнений}
+	\input{euclid_ras.tex}
+
+\section{Цепные дроби для решения целочисленных линейных уравнений}
+	\input{cepdrobi.tex}
+
+\chapter{Алгебра}
+	\input{groupsringsfields.tex}
+	\input{aes.tex}
+%\section{Группы на эллиптических кривых}
+	\input{elipt.tex}
+
+\chapter{Теория чисел: продолжение}
+
+\section{Тестирование чисел на простоту: алгоритм Рабина-Миллера}
+ \input{rabinmiller.tex}
+
+\section{Системы сравнений первой степени: китайская теорема об остатках}
+	\input{china.tex}
+
+\section{Дискретное логарифмирование: алгоритм Полига-Хеллмана}
+	\input{dlog.tex}
+
+\section{Решение сравнений второй степени}
+	\input{xkvadrat.tex}
+	
+	\input{zk.tex}
+
+%\chapter{В планах}
+%\section{В планах: Экскурс в теорию алгоритмов. Иерархия классов сложности алгоритмов. Какие алгоритмы принимать во внимание при оценке возможностей криптоаналитика?}
+%
+%\subsection{Класс \textbf{BPP}.}
+%
+%\begin{figure}
+	%\centering
+		%\includegraphics[scale=0.7]{./hierar.eps}
+%%		\includegraphics[width=0.81\textwidth]{./ris.png}
+	%\caption{Иерархия классов сложности алгоритмов.}
+	%\label{fig:hierar}
+%\end{figure}
+%
+%
+%\section{В планах: Доказательство с  нулевым разглашением.}
+%
+%\section{В планах: Информация. Неопределенность. Энтропия. Надежность шифров по Шеннону.}
+%
+%\section{В планах: Криптоанализ.}
+%
+%\section{В планах: Примеры угроз. Классификация атак. Принип Керкгоффса.}
+%
+%\section{В планах: Еще примеры криптографических протоколов}
+%
+%\subsection{В планах: Привязка к биту. Подбрасывание монеты по телефону.}
+%
+%\subsection{В планах: Игра в покер по телефону.}
+%
+%\subsection{В планах: Цифровая подпись. Слепая цифровая подпись}
+%
+%\subsection{В планах: Электронные деньги}
+%
+%\subsection{В планах: Электронные выборы}
+%
+%\subsection{В планах: Разделение секрета}
+%
+%\subsection{В планах: Многосторонние секретные вычисления}
+%
+
+
+
+
+\begin{flushright}
+
+\end{flushright}
+
+%\section{Символы Лежандра и Якоби}
+%	\input{legandre.tex}
+
+
+\chapter{Приложение. Таблицы. Контрольные упражнения.}
+
+
+\section{Примеры контрольных работ}
+	\input{kontrol.tex}
+\section{Таблицы}
+	\input{tables.tex}
+
+	\input{literatura.tex}
+
+
+\newpage
+%Список обозначений
+
+\input{./oboznach.tex}
+
+%Предметный указатель
+%\begin{theindex}
+	\input{metod.ind}
+%\end{theindex}
+
+\end{document}
